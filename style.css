@@ -77,7 +77,7 @@ footer { background: #111; color: #f6f5f0; padding: 24px 5.5%; display: flex; ju
 .letter-modal { position: fixed; inset: 0; z-index: 20; background: #111e; display: grid; place-items: center; padding: 22px; opacity: 0; visibility: hidden; transition: opacity .35s, visibility .35s; overflow-y: auto; }
 .letter-modal.visible { opacity: 1; visibility: visible; }
 .modal-close { position: fixed; right: 22px; top: 15px; border: 0; background: none; color: white; font-size: 38px; cursor: pointer; line-height: 1; z-index: 22; }
-.full-letter { background: #fbfaf5; width: min(100%, 680px); min-height: min(78vh, 780px); padding: clamp(28px, 6vw, 65px); position: relative; box-shadow: 0 20px 70px #0004; border: 1px solid #e2ded2; background-image: repeating-linear-gradient(0deg, transparent 0 31px, #b9d8d733 32px 33px); }
+.full-letter { margin: auto; background: #fbfaf5; width: min(100%, 680px); min-height: min(78vh, 780px); padding: clamp(28px, 6vw, 65px); position: relative; box-shadow: 0 20px 70px #0004; border: 1px solid #e2ded2; background-image: repeating-linear-gradient(0deg, transparent 0 31px, #b9d8d733 32px 33px); }
 .letter-kicker, .letter-date { font-size: 9px; letter-spacing: .18em; }
 .letter-date { color: var(--muted); margin-top: 35px; }
 .full-letter h2 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(3rem, 8vw, 5.5rem); line-height: .9; letter-spacing: -.06em; margin: 22px 0 35px; }
@@ -103,7 +103,7 @@ footer { background: #111; color: #f6f5f0; padding: 24px 5.5%; display: flex; ju
   .intro-strip p { font-size: 8px; letter-spacing: .13em; }
   .surprise { grid-template-columns: 1fr; padding: 62px 7% 45px; gap: 5px; }
   .surprise-heading h2 { font-size: 3.7rem; margin: 18px 0; }
-  .envelope-scene { min-height: 360px; }
+  .envelope-scene { min-height: 400px; margin-top: 100px; }
   .envelope { height: 230px; }
   .letter-preview { height: 220px; }
   .envelope.open .letter-preview { bottom: 75px; transform: translateY(-65px); }
@@ -160,6 +160,6 @@ footer { background: #111; color: #f6f5f0; padding: 24px 5.5%; display: flex; ju
   transform: translate(-50%, -60%) rotate(5deg) scale(.9);
 }
 @media (max-width: 650px) {
-  .birthday-collage { width: 112%; }
+  .birthday-collage { width: 92%; }
   .birthday-collage span { font-size: 8px; }
 }
