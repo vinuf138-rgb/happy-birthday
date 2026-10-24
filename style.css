@@ -64,10 +64,10 @@ button { font: inherit; }
 .letter-top { position: absolute; top: 17px; }
 .letter-bottom { position: absolute; bottom: 16px; }
 .envelope-front { position: absolute; z-index: 3; inset: 0; background: #b8dadd; clip-path: polygon(0 0, 50% 56%, 100% 0, 100% 100%, 0 100%); pointer-events: none; }
-.envelope-flap { position: absolute; z-index: 4; inset: 0; background: #c9e5e6; clip-path: polygon(0 0, 100% 0, 50% 58%); transform-origin: top; transition: transform .6s ease; pointer-events: none; }
+.envelope-flap { position: absolute; z-index: 4; inset: 0; background: #c9e5e6; clip-path: polygon(0 0, 100% 0, 50% 58%); transform-origin: top; transition: transform .6s ease, z-index 0s .3s; pointer-events: none; }
 .envelope-seal { position: absolute; z-index: 5; top: 42%; left: 50%; transform: translate(-50%,-50%); width: 35px; height: 35px; border-radius: 50%; background: #f7f3eb; display: grid; place-items: center; color: #111; font-size: 15px; pointer-events: none; transition: opacity .3s; }
 .envelope.open .letter-preview { bottom: 95px; transform: translateY(-75px); }
-.envelope.open .envelope-flap { transform: rotateX(180deg); }
+.envelope.open .envelope-flap { transform: rotateX(180deg); z-index: 1; }
 .envelope.open .envelope-seal { opacity: 0; }
 .tap-note { margin-top: 27px; font-size: 9px; letter-spacing: .18em; }
 .sparkles { position: absolute; inset: -20px; pointer-events: none; z-index: 6; }
